@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Xcode Project",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "Asahi Restart Helper.xcodeproj/",
+                "-scheme",
+                "Asahi Restart Helper",
+                "-derivedDataPath",
+                "${workspaceFolder}/build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run App",
+            "type": "shell",
+            "command": "open",
+            "args": [
+                "${workspaceFolder}/build/Build/Products/Debug/Asahi Restart Helper.app"
+            ],
+            "dependsOn": ["Build Xcode Project"],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
