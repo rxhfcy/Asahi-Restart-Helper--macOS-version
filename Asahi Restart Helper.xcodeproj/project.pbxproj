@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE7C70762BC8C56200B3C0C2 /* Asahi-Restart-Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Asahi-Restart-Helper-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CEB03E8B2BC8B647009F2082 /* Asahi Restart Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asahi Restart Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB03E8E2BC8B647009F2082 /* AsahiRestartHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsahiRestartHelperApp.swift; sourceTree = "<group>"; };
 		CEB03E922BC8B648009F2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		CEB03E8D2BC8B647009F2082 /* Asahi Restart Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C70762BC8C56200B3C0C2 /* Asahi-Restart-Helper-Info.plist */,
 				CEB03E8E2BC8B647009F2082 /* AsahiRestartHelperApp.swift */,
 				CEB03E9F2BC8B810009F2082 /* AppDelegate.swift */,
 				CEB03E922BC8B648009F2082 /* Assets.xcassets */,
@@ -277,6 +279,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Asahi Restart Helper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Asahi-Restart-Helper-Info.plist";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +306,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Asahi Restart Helper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Asahi-Restart-Helper-Info.plist";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
