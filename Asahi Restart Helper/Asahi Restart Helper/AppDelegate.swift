@@ -22,7 +22,7 @@ class MenuBarManager: NSObject {
     
     func setupStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem?.button?.title = "🚀"
+        statusItem?.button?.image = NSImage(named: NSImage.Name("MenuBarIcon"))
         
         let menu = NSMenu()
         menu.addItem(NSMenuItem(title: "Test", action: #selector(testAction), keyEquivalent: ""))
