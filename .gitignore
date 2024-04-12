@@ -1,0 +1,29 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+
+# allow VSCode config files
+#.vscode
+
+# VSCode builds here
+build/
+
+# macOS
+.DS_Store
+._*
+
+# Swift/Objective-C specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+
+# Xcode Derived Data
+DerivedData/
