@@ -17,6 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: xcodebuild -project Asahi\ Linux\ Helper.xcodeproj/ -scheme "Asahi Restart Helper" build
+      run: xcodebuild -project Asahi\ Restart\ Helper.xcodeproj/ -scheme "Asahi Restart Helper" build
     - name: Run tests
-      run: xcodebuild -project Asahi\ Linux\ Helper.xcodeproj/ -scheme "Asahi Restart Helper" test
+      run: xcodebuild -project Asahi\ Restart\ Helper.xcodeproj/ -scheme "Asahi Restart Helper" test
