@@ -1,16 +1,16 @@
-# Xcode
+# macOS specific junk
+.DS_Store
+._*
+
+# Xcode specific
 xcuserdata/
 *.xcuserstate
 
-# allow VSCode config files
+# (allow VSCode config files)
 #.vscode
 
-# VSCode builds here
+# VSCode build files
 build/
-
-# macOS
-.DS_Store
-._*
 
 # Swift/Objective-C specific
 *.hmap
@@ -18,12 +18,12 @@ build/
 *.dSYM.zip
 *.dSYM
 
-# Playgrounds
+# Playgrounds specific
 timeline.xctimeline
 playground.xcworkspace
 
-# Swift Package Manager
-.build/
-
 # Xcode Derived Data
 DerivedData/
+
+# Swift Package Manager specific
+.build/

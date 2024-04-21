@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
-// UnitTests.swift (Asahi Restart Helper)
+// UnitTests.swift
 
 // TODO: Actually implement tests (currently just a dummy file)
 
 import XCTest
+
 
 final class UnitTests: XCTestCase {
     

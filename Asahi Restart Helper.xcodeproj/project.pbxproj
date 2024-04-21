@@ -10,10 +10,18 @@
 		CE7C707E2BC8C6D800B3C0C2 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C707D2BC8C6D800B3C0C2 /* UITests.swift */; };
 		CE7C70802BC8C6D800B3C0C2 /* UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C707F2BC8C6D800B3C0C2 /* UITestsLaunchTests.swift */; };
 		CE7C708D2BC8C6FE00B3C0C2 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C708C2BC8C6FE00B3C0C2 /* UnitTests.swift */; };
+		CE94103A2BD31EEF0009A03A /* CustomButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9410392BD31EEF0009A03A /* CustomButtonStyles.swift */; };
+		CE94103C2BD320F20009A03A /* MenuManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94103B2BD320F20009A03A /* MenuManagement.swift */; };
+		CE94103E2BD323DC0009A03A /* PopoverManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94103D2BD323DC0009A03A /* PopoverManagement.swift */; };
+		CE9410422BD34B130009A03A /* HelpDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9410412BD34B130009A03A /* HelpDialog.swift */; };
+		CE9410442BD34BCF0009A03A /* RestartConfirmationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9410432BD34BCF0009A03A /* RestartConfirmationDialog.swift */; };
+		CE9410462BD34C1F0009A03A /* PreferencesDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9410452BD34C1F0009A03A /* PreferencesDialog.swift */; };
+		CE9410492BD34F420009A03A /* StartupDiskConfirmationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9410482BD34F420009A03A /* StartupDiskConfirmationDialog.swift */; };
 		CEB03E8F2BC8B647009F2082 /* AsahiRestartHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB03E8E2BC8B647009F2082 /* AsahiRestartHelperApp.swift */; };
 		CEB03E932BC8B648009F2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB03E922BC8B648009F2082 /* Assets.xcassets */; };
-		CEB03E962BC8B648009F2082 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB03E952BC8B648009F2082 /* Preview Assets.xcassets */; };
 		CEB03EA02BC8B810009F2082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB03E9F2BC8B810009F2082 /* AppDelegate.swift */; };
+		CED498F02BC8D47B005C6241 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED498EF2BC8D47B005C6241 /* ContentView.swift */; };
+		CEFC00BF2BC9D20A00D76216 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEFC00BD2BC9D20A00D76216 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,18 +42,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE3A0D292BC93B8B0052ED1A /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		CE7C70762BC8C56200B3C0C2 /* Asahi-Restart-Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Asahi-Restart-Helper-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CE7C707B2BC8C6D800B3C0C2 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C707D2BC8C6D800B3C0C2 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		CE7C707F2BC8C6D800B3C0C2 /* UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE7C708A2BC8C6FE00B3C0C2 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C708C2BC8C6FE00B3C0C2 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		CE9410392BD31EEF0009A03A /* CustomButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyles.swift; sourceTree = "<group>"; };
+		CE94103B2BD320F20009A03A /* MenuManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManagement.swift; sourceTree = "<group>"; };
+		CE94103D2BD323DC0009A03A /* PopoverManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverManagement.swift; sourceTree = "<group>"; };
+		CE9410412BD34B130009A03A /* HelpDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDialog.swift; sourceTree = "<group>"; };
+		CE9410432BD34BCF0009A03A /* RestartConfirmationDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartConfirmationDialog.swift; sourceTree = "<group>"; };
+		CE9410452BD34C1F0009A03A /* PreferencesDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesDialog.swift; sourceTree = "<group>"; };
+		CE9410482BD34F420009A03A /* StartupDiskConfirmationDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupDiskConfirmationDialog.swift; sourceTree = "<group>"; };
 		CEB03E8B2BC8B647009F2082 /* Asahi Restart Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asahi Restart Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB03E8E2BC8B647009F2082 /* AsahiRestartHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsahiRestartHelperApp.swift; sourceTree = "<group>"; };
 		CEB03E922BC8B648009F2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEB03E952BC8B648009F2082 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEB03E972BC8B648009F2082 /* Asahi_Restart_Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Asahi_Restart_Helper.entitlements; sourceTree = "<group>"; };
 		CEB03E9F2BC8B810009F2082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CED498EF2BC8D47B005C6241 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEFC00BE2BC9D20A00D76216 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CEFC00C02BC9D2B100D76216 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +108,36 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
+		CE94103F2BD3252C0009A03A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CEB03E9F2BC8B810009F2082 /* AppDelegate.swift */,
+				CE94103B2BD320F20009A03A /* MenuManagement.swift */,
+				CE94103D2BD323DC0009A03A /* PopoverManagement.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CE9410402BD325F00009A03A /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				CED498EF2BC8D47B005C6241 /* ContentView.swift */,
+				CE9410432BD34BCF0009A03A /* RestartConfirmationDialog.swift */,
+				CE9410482BD34F420009A03A /* StartupDiskConfirmationDialog.swift */,
+				CE9410452BD34C1F0009A03A /* PreferencesDialog.swift */,
+				CE9410412BD34B130009A03A /* HelpDialog.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		CE9410472BD34C9E0009A03A /* Custom Button Styles */ = {
+			isa = PBXGroup;
+			children = (
+				CE9410392BD31EEF0009A03A /* CustomButtonStyles.swift */,
+			);
+			path = "Custom Button Styles";
+			sourceTree = "<group>";
+		};
 		CEB03E822BC8B647009F2082 = {
 			isa = PBXGroup;
 			children = (
@@ -115,20 +163,15 @@
 			children = (
 				CE7C70762BC8C56200B3C0C2 /* Asahi-Restart-Helper-Info.plist */,
 				CEB03E8E2BC8B647009F2082 /* AsahiRestartHelperApp.swift */,
-				CEB03E9F2BC8B810009F2082 /* AppDelegate.swift */,
+				CE94103F2BD3252C0009A03A /* AppDelegate */,
+				CE9410402BD325F00009A03A /* ContentView */,
+				CE9410472BD34C9E0009A03A /* Custom Button Styles */,
+				CEFC00BD2BC9D20A00D76216 /* Localizable.strings */,
+				CE3A0D292BC93B8B0052ED1A /* TODO.md */,
 				CEB03E922BC8B648009F2082 /* Assets.xcassets */,
 				CEB03E972BC8B648009F2082 /* Asahi_Restart_Helper.entitlements */,
-				CEB03E942BC8B648009F2082 /* Preview Content */,
 			);
 			path = "Asahi Restart Helper";
-			sourceTree = "<group>";
-		};
-		CEB03E942BC8B648009F2082 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CEB03E952BC8B648009F2082 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +260,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fi,
 			);
 			mainGroup = CEB03E822BC8B647009F2082;
 			productRefGroup = CEB03E8C2BC8B647009F2082 /* Products */;
@@ -249,7 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB03E962BC8B648009F2082 /* Preview Assets.xcassets in Resources */,
+				CEFC00BF2BC9D20A00D76216 /* Localizable.strings in Resources */,
 				CEB03E932BC8B648009F2082 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE94103E2BD323DC0009A03A /* PopoverManagement.swift in Sources */,
+				CE94103C2BD320F20009A03A /* MenuManagement.swift in Sources */,
 				CEB03EA02BC8B810009F2082 /* AppDelegate.swift in Sources */,
+				CE9410422BD34B130009A03A /* HelpDialog.swift in Sources */,
+				CE9410462BD34C1F0009A03A /* PreferencesDialog.swift in Sources */,
+				CE9410442BD34BCF0009A03A /* RestartConfirmationDialog.swift in Sources */,
 				CEB03E8F2BC8B647009F2082 /* AsahiRestartHelperApp.swift in Sources */,
+				CE94103A2BD31EEF0009A03A /* CustomButtonStyles.swift in Sources */,
+				CE9410492BD34F420009A03A /* StartupDiskConfirmationDialog.swift in Sources */,
+				CED498F02BC8D47B005C6241 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +349,18 @@
 			targetProxy = CE7C708E2BC8C6FE00B3C0C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEFC00BD2BC9D20A00D76216 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFC00BE2BC9D20A00D76216 /* en */,
+				CEFC00C02BC9D2B100D76216 /* fi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE7C70842BC8C6D800B3C0C2 /* Debug */ = {
@@ -492,7 +556,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Asahi Restart Helper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Asahi-Restart-Helper-Info.plist";
@@ -521,7 +584,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Asahi Restart Helper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Asahi-Restart-Helper-Info.plist";

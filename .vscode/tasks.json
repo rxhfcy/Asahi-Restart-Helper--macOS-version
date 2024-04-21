@@ -29,10 +29,11 @@
             "args": [
                 "${workspaceFolder}/build/Build/Products/Debug/Asahi Restart Helper.app"
             ],
-            "dependsOn": ["Build Xcode Project"],
+            "dependsOn": [
+                "Build Xcode Project"
+            ],
             "group": {
-                "kind": "test",
-                "isDefault": true
+                "kind": "build"
             },
             "presentation": {
                 "reveal": "always"

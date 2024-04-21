@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
-// UITests.swift (Asahi Restart Helper)
+// UITests.swift
 
 // TODO: Actually implement tests (currently just a dummy file)
 
 import XCTest
+
 
 final class UITests: XCTestCase {
     
@@ -29,7 +30,7 @@ final class UITests: XCTestCase {
     }
     
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+        if #available(macOS 10.15, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()

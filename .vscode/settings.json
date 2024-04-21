@@ -1,12 +1,17 @@
 {
     "cSpell.ignoreWords": [
-        "nextonly",
         "Asahi",
-        "NVRAM",
         "asahi",
+        "nextonly",
+        "NVRAM",
         "bootable",
         "diskutil",
         "prefs",
-        "xcodeproj"
-    ]
+        "xcodeproj",
+        "beachball",
+        "Localizable",
+    ],
+    // NOTE: Looks like vscode / "Format document" would like to default to 2 spaces (?!)
+    // TODO: pick the most sane default (4, hopefully) & pick and set up automatic Swift formatter
+    "editor.tabSize": 4,
 }

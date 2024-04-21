@@ -1,0 +1,102 @@
+/*
+ SPDX-License-Identifier: MIT
+ Localizable.strings (Finnish)
+*/
+
+
+// TODO: remove alternatives and make final decisions eventually
+
+
+// Always use "Käynnistyslevy" ("Startup Disk") in quotes, to emphasize that the concept is a weird Apple-specific quirk and it has a bad and misleading name (should arguably be called "Default OS" or something). Leads to extra UI ugliness, but perhaps worth it.
+
+
+// Adjust these popover ("dialog") widths to make everything fit neatly inside the popover "speech bubbles"
+"RestartConfirmationDialog.Width" = "385";
+"StartupDiskConfirmationDialog.Width" = "430";
+"PreferencesDialog.Width" = "420";
+"HelpDialog.Width" = "400";
+
+"RestartConfirmationDialog.OnlyTwoDisks.Linux" = "Käynnistä uudelleen Linuxissa...";
+// "RestartConfirmationDialog.OnlyTwoDisksMacOS" = "Käynnistä uudelleen macOS:ssä...";
+"RestartConfirmationDialog.OnlyTwoDisks.macOS" = "Käynnistä macOS uudelleen...";
+
+// The word "tämänhetkinen" or "nykyinen" should probably be omitted for brevity, because formal written Finnish ("kirjakieli") would lead to an overly lengthy menu item otherwise
+// "RestartConfirmationDialog.CurrentDefault" = "(tämänhetkinen oletus)";
+// "RestartConfirmationDialog.CurrentDefault" = "(nykyinen oletus)";
+// "RestartConfirmationDialog.CurrentDefault" = "(nykyoletus)";
+"RestartConfirmationDialog.CurrentDefault" = "(oletus)";
+
+// Super ugly but probably worth it to try to have "käynnistyslevy" in quotes
+// "RestartConfirmationDialog.ChangeStartupDisk" = "Aseta uusi oletuskäynnistyslevy";
+// "RestartConfirmationDialog.ChangeStartupDisk" = "Vaihda oletuskäynnistyslevyä";
+"RestartConfirmationDialog.ChangeStartupDisk" = "Vaihda \"käynnistyslevy\"-oletus";
+
+"RestartConfirmationDialog.Preferences" = "Asetukset...";
+"RestartConfirmationDialog.IsNext" = "(\"%@\" käynnistyy seuraavaksi)";
+
+// Use the arguably redundant word "levy" again, would be even worse without it (%@:iä tjsp...)
+"RestartConfirmationDialog.UseDisk" = "Käytä levyä \"%@\"...";
+
+// This message is taken directly from the system Restart dialog
+"RestartConfirmationDialog.Title" = "Haluatko varmasti käynnistää tietokoneen uudelleen?";
+
+// The wording of this text is taken directly from the system Restart dialog shown when other users are logged in. The same wording applies here.
+// Also considered using an exclamation point, because unlike the Apple dialog, this one doesn't require a password to continue (if password-free usage is enabled), but ultimately decided against it.
+// "RestartConfirmationDialog.Warning" = "Tallentamattomat muutokset voidaan menettää uudelleenkäynnistettäessä!";
+// "RestartConfirmationDialog.Warning" = "Tallentamattomat muutokset voidaan menettää uudelleenkäynnistettäessä.";
+"RestartConfirmationDialog.Warning" = "Tallentamattomat muutokset voidaan menettää uudelleenkäynnistettäessä";
+
+// "RestartConfirmationDialog.WarningTooltip" = "Ei voida taata, että samat ikkunat käynnistyvät uudelleen sisäänkirjauduttaessa";
+// "RestartConfirmationDialog.WarningTooltip" = "Avoimien ikkunoiden palautuminen uudelleenkäynnistyksen jälkeen ei ole taattu";
+"RestartConfirmationDialog.WarningTooltip" = "Avoimien ikkunoiden palautuminen uudelleenkäynnistyksen jälkeen ei ole varmaa";
+"RestartConfirmationDialog.RestartButton" = "Käynnistä uudelleen...";
+"RestartConfirmationDialog.RestartWithoutPasswordButton" = "Käynnistä uudelleen nyt!";
+"RestartConfirmationDialog.CancelButton" = "Kumoa";
+
+// Ugly, lengthy and clunky, but probably still worth it to have "käynnistyslevy" ("Startup Disk") in quotes
+// "StartupDiskConfirmationDialog.Title" = "Aseta uusi oletuskäynnistyslevy?";
+// "StartupDiskConfirmationDialog.Title" = "Vaihda oletuskäynnistyslevyä?";
+// "StartupDiskConfirmationDialog.Title" = "Vaihda oletuskäynnistyslevy?";
+// "StartupDiskConfirmationDialog.Title" = "Vaihda \"käynnistyslevy\" (oletus)?";
+// "StartupDiskConfirmationDialog.Title" = "Vaihda oletus asetukselle \"käynnistyslevy\"?";
+"StartupDiskConfirmationDialog.Title" = "Vaihda oletuksena käytettävä \"käynnistyslevy\"?";
+
+// "StartupDiskConfirmationDialog.Info" = "Uusi oletuskäynnistyslevy: \"%@\"";
+// "StartupDiskConfirmationDialog.Info" = "Uusi \"käynnistyslevy\" (oletus): \"%@\"";
+"StartupDiskConfirmationDialog.Info" = "Uusi oletuksena käytettävä \"käynnistyslevy\": \"%@\"";
+
+// "StartupDiskConfirmationDialog.Explanation" = "Käynnistyslevy on Apple-kohtainen asetus, joka määrittää, mitä levyä käytetään oletuksena normaalin uudelleenkäynnistyksen tai sammuttamisen jälkeen.";
+// "Apple-tietokoneissa 'Käynnistyslevyllä' tarkoitetaan levyä, jota käytetään oletuksena normaalin uudelleenkäynnistyksen tai sammuttamisen jälkeen."
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevy' on Apple-laitteille ominainen asetus, joka määrittää, mitä levyä käytetään oletuksena normaalin uudelleenkäynnistyksen tai sammuttamisen jälkeen.";
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevy' on Apple-laitteille ominainen asetus, joka määrittää, mitä levyä käynnistykseen oletusarvoisesti käytetään uudelleenkäynnistyksen tai sammuttamisen jälkeen.";
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevy' on Apple-laitteille ominainen asetus, joka määrittää, mitä levyä käyttäen tietokone oletuksena käynnistyy uudelleenkäynnistyksen tai sammuttamisen jälkeen.";
+// "StartupDiskConfirmationDialog.Explanation" = "Apple käyttää termiä 'Käynnistyslevy' asetukselle, joka määrittää, mitä levyä käyttäen tietokone oletuksena käynnistyy \"normaalin\" uudelleenkäynnistyksen tai sammuttamisen jälkeen.";
+// "StartupDiskConfirmationDialog.Explanation" = "Apple käyttää termiä 'Käynnistyslevy' levystä, jota käyttäen tietokone oletuksena käynnistyy \"normaalin\" uudelleenkäynnistyksen tai sammuttamisen jälkeen.";
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevyksi' kutsutaan levyä, jota käyttäen Apple-tietokone oletuksena käynnistyy (\"normaalin\" uudelleenkäynnistyksen tai sammuttamisen jälkeen).";
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevy' on levy, jota käyttäen Apple-tietokone oletuksena käynnistyy (\"normaalin\" uudelleenkäynnistyksen tai sammuttamisen jälkeen).";
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevy' on levy, jota Apple-tietokone oletusarvoisesti käyttää käynnistyessään (\"normaalin\" uudelleenkäynnistyksen tai sammuttamisen jälkeen).";
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevy' on levy, jota Apple-tietokone oletusarvoisesti käyttää käynnistyessään (\"tavallisen\" uudelleenkäynnistyksen tai sammuttamisen jälkeen)";
+// "StartupDiskConfirmationDialog.Explanation" = "'Käynnistyslevy' on levy, jota Apple-tietokone aina oletusarvoisesti käyttää käynnistyessään (\"tavallisen\" uudelleenkäynnistyksen tai sammuttamisen jälkeen).";
+"StartupDiskConfirmationDialog.Explanation" = "\"Käynnistyslevy\" on levy, jota Apple-tietokone aina oletusarvoisesti käyttää käynnistyessään (\"tavallisen\" uudelleenkäynnistyksen tai sammuttamisen jälkeen).";
+
+
+"StartupDiskConfirmationDialog.Change" = "Vaihda";
+"StartupDiskConfirmationDialog.Cancel" = "Peruuta";
+
+
+// Localize App name in preferences window if applicable, name isn't shown anywhere else in the UI
+"PreferencesDialog.Title" = "Asahi-uudelleenkäynnistysapuri - Asetukset";
+
+"PreferencesDialog.AutoStartToggleLabel" = "Pidä kuvake macOS-valikkopalkissa käynnistyksen jälkeen";
+"PreferencesDialog.AutoStartToggleLabelTooltip" = "Määrää, sisällytetäänkö ohjelma järjestelmän kirjautumiskohteisiin. Näyttää kuvakkeen jokaisen macOS-käynnistyksen jälkeen.";
+
+"PreferencesDialog.HelperAppToggleLabel" = "Ohita salasanakysymykset (asentaa järjestelmätyökalun)";
+"PreferencesDialog.HelperAppToggleLabelTooltip" = "Asenna tai poista järjestelmätyökalu, joka mahdollistaa ohjelman käyttämisen ilman salasanan kirjoittamista";
+
+"PreferencesDialog.CloseButton" = "Valmis";
+"PreferencesDialog.QuitButton" = "Lopeta ohjelma";
+
+// Clunky, use another word?
+"HelpDialog.Title" = "Apua";
+"HelpDialog.Text" = "(Lisää ohjeteksti tänne)";
+"HelpDialog.CloseButton" = "Sulje";

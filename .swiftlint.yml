@@ -1,0 +1,5 @@
+# swiftlint can be installed by running `brew install swiftlint`
+
+disabled_rules:
+# Yes, TODOs etc. should be dealt with eventually. Don't complain about them for now though.
+  - todo

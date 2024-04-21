@@ -1,0 +1,184 @@
+/*
+ SPDX-License-Identifier: MIT
+ Localizable.strings (English)
+*/
+
+
+// TODO: remove alternatives and make final decisions eventually
+
+
+// Always use "Startup Disk" in quotes, to emphasize that the concept is a weird Apple-specific quirk and it has a bad and misleading name (should arguably be called "Default OS" or something). Leads to extra UI ugliness, but perhaps worth it.
+
+
+// Adjust these popover ("dialog") widths to make everything fit neatly inside the popover "speech bubbles"
+"RestartConfirmationDialog.Width" = "320";
+"StartupDiskConfirmationDialog.Width" = "400";
+"PreferencesDialog.Width" = "390";
+"HelpDialog.Width" = "300";
+
+"RestartConfirmationDialog.OnlyTwoDisks.Linux" = "Restart in Linux...";
+// "RestartConfirmationDialog.OnlyTwoDisks.macOS" = "Restart in macOS...";
+"RestartConfirmationDialog.OnlyTwoDisks.macOS" = "Restart macOS...";
+"RestartConfirmationDialog.CurrentDefault" = "(current default)";
+
+// "default" not capitalized to further emphasize the fact that it can be changed by the user if necessary
+//
+//"RestartConfirmationDialog.ChangeStartupDisk" = "Change default \"Startup Disk\"";
+"RestartConfirmationDialog.ChangeStartupDisk" = "Change default 'Startup Disk'";
+
+"RestartConfirmationDialog.Preferences" = "Preferences...";
+"RestartConfirmationDialog.IsNext" = "(\"%@\" will start up next)";
+"RestartConfirmationDialog.UseDisk" = "Use \"%@\"...";
+
+// This message is taken directly from the system Restart dialog
+"RestartConfirmationDialog.Title" = "Are you sure you want to restart now?";
+
+// The wording of this text is taken directly from the system Restart dialog shown when other users are logged in. The same wording applies here.
+// Also considered using an exclamation point, because unlike the Apple dialog, this one doesn't require a password to continue (if password-free usage is enabled), but ultimately decided against it.
+// "RestartConfirmationDialog.Warning" = "Unsaved changes may be lost when restarting!";
+// "RestartConfirmationDialog.Warning" = "Unsaved changes may be lost when restarting.";
+"RestartConfirmationDialog.Warning" = "Unsaved changes may be lost when restarting";
+
+//"RestartConfirmationDialog.WarningTooltip" = "No way to guarantee that currently open windows will be reopened on the next macOS login";
+// "RestartConfirmationDialog.WarningTooltip" = "No way to guarantee windows will be reopened on next macOS login";
+// "RestartConfirmationDialog.WarningTooltip" = "Not guaranteed that windows will be reopened on next macOS login";
+// "RestartConfirmationDialog.WarningTooltip" = "It can't be guaranteed that windows will reopen upon the next macOS login";
+// "RestartConfirmationDialog.WarningTooltip" = "It can't be guaranteed that current windows will reopen upon the next macOS login";
+"RestartConfirmationDialog.WarningTooltip" = "It can't be guaranteed that current windows will reopen upon next macOS login";
+
+//"RestartConfirmationDialog.RestartButton" = "Restart in %@...";
+"RestartConfirmationDialog.RestartButton" = "Restart...";
+
+//"RestartConfirmationDialog.RestartWithoutPasswordButton" = "Restart";
+//"RestartConfirmationDialog.RestartWithoutPasswordButton" = "Restart in %@ now!";
+"RestartConfirmationDialog.RestartWithoutPasswordButton" = "Restart now!";
+
+"RestartConfirmationDialog.CancelButton" = "Cancel";
+
+// "StartupDiskConfirmationDialog.Title" = "Change default Startup Disk?";
+// "StartupDiskConfirmationDialog.Title" = "Change default \"Startup Disk\"?";
+// "StartupDiskConfirmationDialog.Title" = "Change default \"Startup Disk\" setting?";
+"StartupDiskConfirmationDialog.Title" = "Change default 'Startup Disk' setting?";
+
+// "StartupDiskConfirmationDialog.Info" = "\"%@\" will become the new default Startup Disk";
+// "StartupDiskConfirmationDialog.Info" = "\"%@\" will become the new default Startup Disk.";
+// "StartupDiskConfirmationDialog.Info" = "\"%@\" will become the new default \"Startup Disk\".";
+"StartupDiskConfirmationDialog.Info" = "\"%@\" will become the new default 'Startup Disk'.";
+
+// "StartupDiskConfirmationDialog.Explanation" = "The Startup Disk is an Apple-specific setting that determines the default disk used after a normal restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "The Startup Disk is an Apple-specific setting that determines which disk the computer uses for starting up by default after a normal restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "The 'Startup Disk' is a setting on Apple devices that determines the default disk for starting up after a normal restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "The 'Startup Disk' is a setting on Apple devices that determines the default disk for starting up after a normal restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "The 'Startup Disk' is a setting on Apple devices that determines the default disk for starting up the computer after a normal restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "The 'Startup Disk' is a setting on Apple devices that determines the default disk used for starting up the computer after a normal restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "Apple uses the term 'Startup Disk' for the setting that determines the disk used by default for starting up the computer after a \"normal\" restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "Apple uses the term 'Startup Disk' for the disk used by default for starting up the computer after a \"normal\" restart or a shutdown.";
+// "StartupDiskConfirmationDialog.Explanation" = "The 'Startup Disk' is the disk used by default for starting up an Apple computer (after a \"normal\" restart or a shutdown)";
+// "StartupDiskConfirmationDialog.Explanation" = "The 'Startup Disk' is the disk always used by default for starting up an Apple computer (after a \"normal\" restart or a shutdown).";
+// "StartupDiskConfirmationDialog.Explanation" = "The \"Startup Disk\" is the disk always used by default for starting up an Apple computer (after a \"normal\" restart or a shutdown).";
+"StartupDiskConfirmationDialog.Explanation" = "The 'Startup Disk' is the disk always used by default for starting up an Apple computer (after a \"normal\" restart or a shutdown).";
+
+
+"StartupDiskConfirmationDialog.Change" = "Change";
+"StartupDiskConfirmationDialog.Cancel" = "Cancel";
+
+
+// Localize App name in preferences window if applicable, name isn't shown anywhere else in the UI
+"PreferencesDialog.Title" = "Asahi Restart Helper - Preferences";
+
+// I want to explicitly mention macOS here. I can't promise that a similar icon will also be there on Linux (the user is probably just about to restart in Linux...)
+//"PreferencesDialog.AutoStartToggleLabel" = "Always show this app in the menubar when using macOS";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always add this app to the menubar when using macOS";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always add this app to the menubar when macOS starts";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always add this app to the menubar after macOS login";
+//"PreferencesDialog.AutoStartToggleLabel" = "Automatically enable this menubar icon on macOS";
+//"PreferencesDialog.AutoStartToggleLabel" = "Keep this icon in the menubar on macOS after restarting";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always show this icon when you return to macOS";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always show this icon on macOS"; // what about Quitting the app?
+//"PreferencesDialog.AutoStartToggleLabel" = "Always show this icon (on macOS)";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always show this icon (in macOS menubar)";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always show this app in macOS menubar";
+//"PreferencesDialog.AutoStartToggleLabel" = "Always show this icon in macOS menubar";
+//"PreferencesDialog.AutoStartToggleLabel" = "Keep icon in macOS menubar after restart";
+//"PreferencesDialog.AutoStartToggleLabel" = "Show icon in macOS menubar after restart";
+//"PreferencesDialog.AutoStartToggleLabel" = "Show this icon in macOS menubar after restart";
+//"PreferencesDialog.AutoStartToggleLabel" = "Show app icon in macOS menubar after restart";
+// "PreferencesDialog.AutoStartToggleLabel" = "Keep app icon in macOS menubar after restart";
+"PreferencesDialog.AutoStartToggleLabel" = "Show macOS menubar icon (launch at login)";
+
+
+
+
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "When enabled, the app will automatically load when macOS starts";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "When enabled, the icon will automatically appear on macOS startup";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "When enabled, the app will automatically load on macOS startup";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "When enabled, the app automatically loads on macOS login";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Add or remove this application from macOS login items (automatically load on macOS login or not)";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Include this app in (Open at Login) macOS Login Items";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Include this app in macOS Login Items (Open at Login)";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Include this app in Login Items (Open at Login)";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Adds app to macOS Login Items to ensure visibility after system restart"
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Adds this app to Login Items (will automatically Open at Login)";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Adds this app to Login Items (will automatically open after every restart)";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Adds this app to Login Items (will show icon after every restart)";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Adds this app to Login Items. This is required to keep the icon in the menubar.";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "Adds this app to Login Items. This is required to show the icon after every macOS login.";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "If enabled, the app will be included in Login Items. This will show the icon after every macOS login.";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "If enabled, the app will be included in Login Items, which will make the icon appear after every macOS login.";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "If enabled, the app will be included in Login Items, which will make the app launch after every macOS login.";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "If enabled, the app will be included in Login Items. This will make the app load after every macOS login.";
+//"PreferencesDialog.AutoStartToggleLabelTooltip" = "If enabled, the app will be included in Login Items. This will make the app available after every macOS login.";
+"PreferencesDialog.AutoStartToggleLabelTooltip" = "If enabled, the app will be included in Login Items. This will show the icon after every macOS login.";
+
+
+// Frustratingly, installing the helper tool requires authentication, so it might be confusing to promise getting rid of passwords, but then *immediately* ask for password...
+
+//"PreferencesDialog.HelperAppToggleLabel" = "Use helper app to allow modifying startup data without manually typing the password";
+//"PreferencesDialog.HelperAppToggleLabel" = "Use helper app to allow not asking for password";
+//"PreferencesDialog.HelperAppToggleLabel" = "Use helper app to bypass asking for passwords";
+//"PreferencesDialog.HelperAppToggleLabel" = "Use helper app to skip password prompts";
+//"PreferencesDialog.HelperAppToggleLabel" = "Use helper app to skip password questions";
+//"PreferencesDialog.HelperAppToggleLabel" = "Use helper app to skip password dialogs";
+//"PreferencesDialog.HelperAppToggleLabel" = "Install and use helper toop to skip password dialogs";
+//"PreferencesDialog.HelperAppToggleLabel" = "Enable password-free operation with helper tool"
+//"PreferencesDialog.HelperAppToggleLabel" = "Enable password-free operation (installs a helper tool)";
+//"PreferencesDialog.HelperAppToggleLabel" = "Use helper tool for password-less operation"
+//"PreferencesDialog.HelperAppToggleLabel" = "Skip password entry by installing helper tool";
+//"PreferencesDialog.HelperAppToggleLabel" = "Bypass password entry by installing helper tool";
+//"PreferencesDialog.HelperAppToggleLabel" = "Don't ask for password (requires installing a helper tool)";
+//"PreferencesDialog.HelperAppToggleLabel" = "Don't ask for password (install a helper tool)";
+//"PreferencesDialog.HelperAppToggleLabel" = "Don't ask for password (installs a helper tool)";
+//"PreferencesDialog.HelperAppToggleLabel" = "Skip password prompts (installs a separate tool)";
+"PreferencesDialog.HelperAppToggleLabel" = "Bypass password prompts (installs a privileged tool)";
+
+
+
+
+// Maybe it's worth the extra words to explain that installing the helper app will require a one-time password/Touch ID prompt
+
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install/uninstall a helper app to bypass mandatory macOS requirement to manually type the password";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install (or uninstall) helper application to bypass mandatory macOS requirement to manually type the password";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall helper application to bypass macOS requirement for manual password entry";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall helper application to bypass manual password entry";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall helper application (allows bypassing manual password entry)";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall helper tool (required for bypassing manual password entry)";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Toggle the installation of a helper tool that allows password-free operation";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Manage helper tool installation for bypassing manual password entry";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall a helper tool for automated password entry";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall a helper tool that allows operating without entering password";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall a helper tool. This is required for password-free operation.";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall a small helper tool (one-time authentication required). The tool is required for further password-free operation.";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall a privileged helper tool (authentication required). Required for password-free usage.";
+//"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall privileged helper tool (authentication required). The tool allows password-free usage.";
+"PreferencesDialog.HelperAppToggleLabelTooltip" = "Install or uninstall the privileged tool to allow password-free usage";
+
+
+
+//"PreferencesDialog.CloseButton" = "Dismiss";
+"PreferencesDialog.CloseButton" = "Done";
+//"PreferencesDialog.QuitButton" = "Quit (removes the icon)";
+"PreferencesDialog.QuitButton" = "Quit app";
+
+"HelpDialog.Title" = "Help";
+"HelpDialog.Text" = "(Add help text here)";
+"HelpDialog.CloseButton" = "Dismiss";
