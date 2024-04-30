@@ -1,6 +1,29 @@
 {
     "version": "2.0.0",
     "tasks": [
+         // Run the app by default
+         {
+            "label": "Run App",
+            "type": "shell",
+            "command": "open",
+            "args": [
+                "${workspaceFolder}/build/Build/Products/Debug/Asahi Restart Helper.app"
+            ],
+            "dependsOn": [
+                "Build Xcode Project"
+            ],
+            "group": {
+                "kind": "build",
+                // This is the default, so that the app is easy to run from VSCode
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+
+        // Build the Xcode project
         {
             "label": "Build Xcode Project",
             "type": "shell",
@@ -15,25 +38,7 @@
             ],
             "group": {
                 "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always"
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "Run App",
-            "type": "shell",
-            "command": "open",
-            "args": [
-                "${workspaceFolder}/build/Build/Products/Debug/Asahi Restart Helper.app"
-            ],
-            "dependsOn": [
-                "Build Xcode Project"
-            ],
-            "group": {
-                "kind": "build"
+                "isDefault": false
             },
             "presentation": {
                 "reveal": "always"

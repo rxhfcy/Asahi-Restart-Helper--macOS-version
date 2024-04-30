@@ -2,14 +2,20 @@
     "cSpell.ignoreWords": [
         "Asahi",
         "asahi",
+        "asahilinux.org",
         "nextonly",
         "NVRAM",
         "bootable",
+        "bootloader",
         "diskutil",
         "prefs",
         "xcodeproj",
         "beachball",
+        "autoload",
+        "autoloads",
+        "passwordless",
         "Localizable",
+        "nohajc",
     ],
     // NOTE: Looks like vscode / "Format document" would like to default to 2 spaces (?!)
     // TODO: pick the most sane default (4, hopefully) & pick and set up automatic Swift formatter
