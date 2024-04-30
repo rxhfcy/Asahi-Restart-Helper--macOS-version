@@ -11,11 +11,15 @@
 
 - [ ] (todo: add link to Linux version's TODO list)
 - [ ] (todo: sync macOS and Linux TODO list)
+- [ ] (todo: update this TODO list to match reality)
 
 # (NOTE: if you tweak something, please keep macOS/Linux TODOs synced!)
 
-- [ ] 2: Make popover close/hide after user clicks "Restart..." and modal password dialog appears
-    - slow UI animation forbids closing the popover, but works without animations?
+- [ ] 1: Code signing / workaround
+    - find someone willing to sign the app and probably keep signing it for years...
+    - or at least find some other tolerable way to not make users jump through silly Apple hoops after installation
+
+- [ ] 2: UI note: "You should also install the corresponding Linux version of this app to easily switch back to macOS"?
 
 - [ ] 1: Does the disk name need to be shown in the Restart confirmation popover or not?
     - leaning on probably implementing this just to always be super predictable and clear
@@ -120,10 +124,10 @@
         - Suggests that the application assists users in the boot process
     - Asahi Restart Icon
         - Too clumsy? Very literal and descriptive, the app does add an (Asahi) icon for restarting
+    - Asahi Startup Disk Icon ("Restart in macOS" / "Restart in Linux")
+        - Even clumsier? Even more literal and descriptive, the app is an icon to change the 'Startup Disk' 
     - Asahi Restart Helper Menu
-        - This is getting ridiculous, almost certainly too long
-    - Asahi Restart Helper Menu Icon
-        - You must be joking
+        - Probably too long and clumsy
     - Asahi Restart
         - Very short, still at least somewhat communicates the application's main function (restarting)
     - Asahi OS Switcher
@@ -144,25 +148,17 @@
         - Extremely literal, i.e. spell out the reason the app exists in the first place
 
 - [ ] 1: App icon OK?
-    - ask for permission
-    - provide all sizes?
+    - ask for permission and use the Asahi icon?
+    - ...or use the Tux Linux icon instead? Or something else?
+    - provide all sizes (why)?
 
 - [ ] 1: Menubar icon OK?
-    - ask for permission
-    - use a "proper" (template?) icon instead that supports macOS dark/light theme?
+    - ask for permission and use the Asahi icon?
+    - ...or use the Tux Linux icon instead? Or something else?
+    - use a "proper" (boring one color template?) icon instead that supports macOS dark/light theme (why)?
 
-- [ ] 2: GitHub blurb ok?
-    - Compare with Linux version
-    - "Asahi Restart Helper: macOS menubar app to easily Restart in Linux (btw add other Asahi Linux tools later?)"
-    - "Asahi Restart Helper: Restart to Asahi Linux this time only (macOS menubar app)" 
-    - "Asahi Restart Helper makes it easy to choose which OS / disk will be used to restart  
-    (it can also change the default Startup Disk setting)"
-    - Asahi Restart Helper (macOS version) is a macOS toolbar app that:
-        - makes it easy to restart in Asahi Linux from macOS
-        - for parity with Linux version of the app, offers an option to select default Startup Disk from within the app
-        - maybe later: updates m1n1 (by launching the Asahi installer via a special command line argument?)
-        - maybe later: add other Asahi installer related tasks (launch Asahi installer, etc?)
-        - obviously will have to ask for permission before using the Asahi name but that won't be relevant for a while
+- [ ] 2: GitHub blurb and README ok?
+    - Sync with Linux version
 
 - [ ] 3: Scope creep? What should the project (not) do?
     - Could the name be "Asahi Linux Helper" instead? Does the Asahi project want a more general "helper"?
@@ -171,8 +167,8 @@
     - potential future "helper" functionality: run Asahi installer
     - potential future "helper" functionality (stretch goal): uninstall Asahi Linux
 
-- [ ] 2: CLI installer: external apps (e.g. Asahi installer) to silently sudo install the app in an already useful state
-    - require sudo
+- [ ] 2: CLI installer: allow external apps (e.g. Asahi installer) to silently sudo install the app in a useful state
+    - requiring sudo mandatory?
     - make app show icon (add to macOS Login Items) --add-to-login-items or something?
     - make app not ask password (install privileged helper app) --install-privileged-helper-app or something?
     - make app not ask questions (permission prompt can't be avoided, right?)
@@ -182,15 +178,15 @@
             - installing helper tool? (yes/no)
 
 - [ ] 2: Handle user having manually disabled macOS permission from System Settings (after having allowed it before)
-    - probably needs another pref for "User has given system permission"
+    - probably needs another hidden pref for "User has given system permission"
     - to test, always perform dummy action that requires same permissions (after pressing "Restart", before sudo bless)
         - if the dummy action failed (detect error code or variable), explain and offer link to correct place in
         System Settings (check if different in macOS 13/14/newer?)
 
-- [ ] 3: Handle not having any other viable disks ("Linux")
+- [ ] 3: Handle not having any other viable disks (no "Linux" to restart in)
     - why would anyone run the app with just the one OS?
     - explain that no other disk were detected
-    - offer to run Asahi Linux installer?
+    - offer to run Asahi Linux installer or at least a link to asahilinux.org?
 
 - [ ] 3: Consider showing a user-friendly error if using Intel
     - reason: if release version is (accidentally?) built Universal, it will not show an error by default
@@ -206,7 +202,7 @@
 
 - [ ] 3: Handle other errors (what? where?)
 
-- [ ] 3: Uninstaller (don't leave privileged helper app and other cruft behind)?
+- [ ] 3: Uninstaller (don't leave the privileged helper app and other cruft behind)?
     - remove privileged helper app
     - remove from Login Items
     - clear all prefs
@@ -218,17 +214,12 @@
     - suggestions for wording/spelling (titles, tooltips)?
 
 - [ ] 3: Write documentation
-    - proper README.md
-    - is anything else necessary?
+    - is the README enough or is something else needed?
 
 - [ ] 3: Write tests
     - Unit tests
-        - might need to sometimes use weird custom mock tests because the app writes to NVRAM, GitHub won't test that 
+        - might need to sometimes use weird custom mock tests because the app writes to NVRAM (GitHub won't test that) 
     - UI tests
-
-- [ ] 1: Code signing
-    - find someone willing to sign the code and ready to keep signing it for years...
-    - or at least find some other tolerable way to not make users jump through hoops after installation
 
 ----------------------------------------
 
@@ -370,3 +361,4 @@
 - [x] Placeholder testing support (dummy Unit Tests and UI Tests, currently only test if the app builds and launches)
 - [x] 2: Confirmed that the app wouldn't even work on Intel (sudo bless --nextonly gives an error)
 - [x] 1: Mock UI for changing default Startup Disk (submenu)
+- [x] 2: Make popover close/hide after user clicks "Restart..."
