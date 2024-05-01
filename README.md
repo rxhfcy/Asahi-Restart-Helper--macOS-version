@@ -1,18 +1,6 @@
-```diff
-- NOTE:
-- Once we've decided on the best compromise for
-```
-[(the Linux version UI)](https://github.com/rxhfcy/Asahi-Restart-Helper--Linux-version)
-```diff
-- AND if "Option Y" (this version) is not chosen,
-- the macOS version will be updated to match the UI of the Linux version.
-```
-
----
-
 # Asahi Startup Disk Icon<br>("Restart in Linux")
 
-<img src="./misc/Menu_Screenshot.png" width="25%" alt="Main menu screenshot"><br>
+<img src="./misc/Menu_Screenshot.png" width="50%" alt="Main menu screenshot"><br>
 
 **Asahi Startup Disk Icon** makes it easy to
 restart your Apple silicon Mac into [Asahi Linux](https://asahilinux.org/) (from macOS).
@@ -60,7 +48,7 @@ more convenient and accessible.
 <img src="./misc/Menu_Screenshot.png" width="50%" alt="Main menu screenshot"><br>
 
 ```diff
-- TODO: update screenshot to
+- TODO: update screenshot to:
 - remove the "Restart in macOS" stuff from an earlier UI iteration
 ```
 
@@ -72,7 +60,7 @@ more convenient and accessible.
 <img src="./misc/Restart_Dialog_Screenshot.png" width="50%" alt="Restart dialog screenshot"><br>
 
 ```diff
-- TODO: update screenshot to
+- TODO: update screenshot to:
 - explicitly state that "name of Linux disk" will be used as the default 'Startup Disk'
 ```
 
@@ -84,10 +72,10 @@ The system will restart without asking any further questions (if the correct per
 <img src="./misc/Change_Default_Screenshot.png" width="50%" alt="Change default startup disk dialog"><br>
 
 ```diff
-- TODO: update submenu in screenshot to
+- TODO: update submenu in screenshot to:
 - also show the current default Startup Disk as disabled + "(current default)"
 
-- TODO: update screenshot to
+- TODO: update screenshot to:
 - remove the "Restart in macOS" stuff from an earlier UI iteration
 ```
 
@@ -163,5 +151,13 @@ automatically when the official [Asahi Linux installer](https://asahilinux.org) 
   the macOS version of this application (add the icon in macOS menubar)
 - **Rationale**: This would benefit all users, especially beginners who e.g. don't already know the
   correct "arcane spell" to switch to macOS from Linux (`sudo dnf install asahi-bless && sudo asahi-bless`)
+
+```diff
+- NOTE:
+- Once we've decided on the best compromise for
+- the Linux version UI(https://github.com/rxhfcy/Asahi-Restart-Helper--Linux-version)
+- AND if "Option Y" (this version) is not chosen,
+- the macOS version will be updated to match the UI of the Linux version.
+```
 
 # See also: [TODO.md](./Asahi%20Restart%20Helper/TODO.md)
